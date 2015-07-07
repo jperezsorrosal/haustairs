@@ -21,12 +21,14 @@ object ScalaTwitterClientExample {
     val twitter = tf.getInstance()
 
     val statuses = twitter.getHomeTimeline()
+
     System.out.println("Showing  timeline.")
     val it = statuses.iterator()
     while (it.hasNext()) {
       val status = it.next()
-      println(status.getUser().getName() + ":" +
+      println(status.getUser().getName() + " :::: " +
         status.getText());
+      println()
     }
   }
 
