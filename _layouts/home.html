@@ -28,14 +28,16 @@
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main"> 
+<div id="main" role="main">
   <div class="article-author-side">
-    <div markdown="0"><a href="https://github.com/jperezsorrosal/houstairs/archive/master.zip" class="btn">Download Zip</a></div>
-    <div markdown="0"><a href="https://github.com/jperezsorrosal/houstairs.git" class="btn">Clone GitHub</a></div>
     {% include _author-bio.html %}
   </div>
 
   <div id="index">
+    <div markdown="0">
+      <a href="https://github.com/jperezsorrosal/houstairs/archive/master.zip" class="btn">Download Zip</a>
+      <a href="https://github.com/jperezsorrosal/houstairs.git" class="btn">Clone GitHub</a>
+    </div>
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
     {% for post in site.posts limit:5 %}    
     <article>

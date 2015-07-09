@@ -24,4 +24,4 @@ a processing system like Spark.
 * Automatize
 * Build tutorial / experience about the process and exprience in Hackership
  
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Get it in github</a>
+<a markdown="0" href="https://github.com/jperezsorrosal/houstairs" class="btn">Get it in github</a>

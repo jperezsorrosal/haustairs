@@ -163,6 +163,20 @@ I used the template Minimal Mistakes.
       <p>This is the first post, just to say that to build this site I used and learn a bit of <a href="http://jekyllrb.com/">Jekyll</a> on <a href="https://pages.github.com">GitHub Pages</a>.
 I used the template <a href="http://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
 
+<p>Some Scala syntax highlight test:</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">object</span> <span class="nc">Main</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="k">val</span> <span class="n">elems</span> <span class="k">=</span> <span class="n">args</span> <span class="n">map</span> <span class="nc">Integer</span><span class="o">.</span><span class="n">parseInt</span>
+      <span class="n">println</span><span class="o">(</span><span class="s">&quot;The sum of my arguments is: &quot;</span> <span class="o">+</span> <span class="n">elems</span><span class="o">.</span><span class="n">foldRight</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="k">_</span> <span class="o">+</span> <span class="k">_</span><span class="o">))</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">{</span>
+      <span class="k">case</span> <span class="n">e</span><span class="k">:</span> <span class="kt">NumberFormatException</span> <span class="o">=&gt;</span> 
+        <span class="n">println</span><span class="o">(</span><span class="s">&quot;Usage: scala Main &lt;n1&gt; &lt;n2&gt; ... &quot;</span><span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
 
       <hr />
       <footer role="contentinfo">
