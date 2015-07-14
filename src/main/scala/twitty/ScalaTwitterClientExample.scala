@@ -12,10 +12,10 @@ object ScalaTwitterClientExample {
     val cb = new ConfigurationBuilder()
     cb.setDebugEnabled(true)
 
-      .setOAuthConsumerKey(conf.getString("haustairs.twitterConsumerKey"))
-      .setOAuthConsumerSecret(conf.getString("haustairs.twitterConsumerSecret"))
-      .setOAuthAccessToken(conf.getString("haustairs.twitterAccessToken"))
-      .setOAuthAccessTokenSecret(conf.getString("haustairs.twitterAccessTokenSecret"))
+      .setOAuthConsumerKey(conf.getString("houstairs.twitterConsumerKey"))
+      .setOAuthConsumerSecret(conf.getString("houstairs.twitterConsumerSecret"))
+      .setOAuthAccessToken(conf.getString("houstairs.twitterAccessToken"))
+      .setOAuthAccessTokenSecret(conf.getString("houstairs.twitterAccessTokenSecret"))
 
     val tf = new TwitterFactory(cb.build())
     val twitter = tf.getInstance()
