@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://jperezsorrosal.github.io/houstairs/feed.xml" />
 <link rel="alternate" type="text/html" href="http://jperezsorrosal.github.io/houstairs" />
-<updated>2015-07-15T15:38:00+02:00</updated>
+<updated>2015-07-15T15:40:54+02:00</updated>
 <id>http://jperezsorrosal.github.io/houstairs/</id>
 <author>
   <name>J.Pérez-Sorrosal</name>
@@ -119,14 +119,14 @@ on the twitter server.&lt;/p&gt;
       &lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;houstairs.twitterConsumerSecret&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-	&lt;a href=&quot;/images/posts/pin-auth/twitter-application-manager.png&quot;&gt;
-		&lt;img src=&quot;/images/posts/pin-auth/twitter-application-manager.png&quot; /&gt;
+	&lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-application-manager.png&quot;&gt;
+		&lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-application-manager.png&quot; /&gt;
 	&lt;/a&gt;
-    &lt;a href=&quot;/images/posts/pin-auth/twitter-manager-access-keys.png&quot;&gt;
-            &lt;img src=&quot;/images/posts/pin-auth/twitter-manager-access-keys.png&quot; /&gt;
+    &lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-manager-access-keys.png&quot;&gt;
+            &lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-manager-access-keys.png&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
-            &lt;a href=&quot;https://apps.twitter.com/&quot; title=&quot;Twitter&#39;s Application management, access keys&quot;&gt;Twitter&#39;s Application management, access, keys&lt;/a&gt;.
+        &lt;a href=&quot;https://apps.twitter.com/&quot; title=&quot;Twitter&#39;s Application management, access keys&quot;&gt;Twitter&#39;s Application management, access, keys&lt;/a&gt;.
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -149,14 +149,14 @@ to the account.&lt;/p&gt;
 &lt;p&gt;We click on the button to authorize the app and a verifier code is displayed. We should paste that code in the console.&lt;/p&gt;
 
 &lt;figure class=&quot;third&quot;&gt;
-        &lt;a href=&quot;/images/posts/pin-auth/twitter-pin-authorize.png&quot;&gt;
-            &lt;img src=&quot;/images/posts/pin-auth/twitter-pin-authorize.png&quot; /&gt;
+        &lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-pin-authorize.png&quot;&gt;
+            &lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-pin-authorize.png&quot; /&gt;
         &lt;/a&gt;
-        &lt;a href=&quot;/images/posts/pin-auth/twitter-pin-verifier-code.png&quot;&gt;
-            &lt;img src=&quot;/images/posts/pin-auth/twitter-pin-verifier-code.png&quot; /&gt;
+        &lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-pin-verifier-code.png&quot;&gt;
+            &lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-pin-verifier-code.png&quot; /&gt;
         &lt;/a&gt;
-        &lt;a href=&quot;/images/posts/pin-auth/twitter-console-pin-verifier.png&quot;&gt;
-            &lt;img src=&quot;/images/posts/pin-auth/twitter-console-pin-verifier.png&quot; /&gt;
+        &lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-console-pin-verifier.png&quot;&gt;
+            &lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-console-pin-verifier.png&quot; /&gt;
         &lt;/a&gt;
 &lt;/figure&gt;
 
@@ -176,8 +176,8 @@ And then I print then out to the console.&lt;/p&gt;
       &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HttpOptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connTimeout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;500000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HttpOptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readTimeout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;500000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-	&lt;a href=&quot;/images/posts/pin-auth/twitter-console-pin-tweets.png&quot;&gt;
-		&lt;img src=&quot;/images/posts/pin-auth/twitter-console-pin-tweets.png&quot; /&gt;
+	&lt;a href=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-console-pin-tweets.png&quot;&gt;
+		&lt;img src=&quot;http://jperezsorrosal.github.io/houstairs/images/posts/pin-auth/twitter-console-pin-tweets.png&quot; /&gt;
 	&lt;/a&gt;
 &lt;/figure&gt;
 
