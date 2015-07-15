@@ -1,0 +1,377 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Twitter PIN Authentication &#8211; Houstairs</title>
+
+<meta name="keywords" content="">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Twitter PIN Authentication">
+
+
+<meta name="twitter:creator" content="@jperezsorrosal">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Twitter PIN Authentication">
+
+<meta property="og:url" content="/twitter-pin-authentication/">
+<meta property="og:site_name" content="Houstairs">
+
+<meta property="og:image" content="/images/default-thumb.png">
+
+
+
+
+
+
+<link rel="canonical" href="/twitter-pin-authentication/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Houstairs Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="/">Houstairs</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				        
+				    
+				    <li><a href="/about/" >About</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="/posts/" >Posts</a></li>
+				
+				    
+				        
+				        
+				    <li><a href="https://github.com/jperezsorrosal/houstairs" target="_blank">Project on github</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="/images/bio-photo-yo.jpg" class="bio-photo" alt="J.Pérez-Sorrosal bio photo">
+
+
+  <h3 itemprop="name">J.Pérez-Sorrosal</h3>
+  <p>Keep learning.</p>
+  <a href="mailto:jperezsorrosal@gmail.com" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+  <a href="http://twitter.com/jperezsorrosal" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  
+  <a href="http://linkedin.com/in/jperezsorrosal" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>
+  
+  
+  
+  <a href="http://github.com/jperezsorrosal" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="http://www.flickr.com/jperezsl" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="/twitter-pin-authentication/" rel="bookmark" title="Twitter PIN Authentication">Twitter PIN Authentication</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <blockquote>
+  <p>I am always doing that which I cannot do, in order that I may learn how to do it.<br />
+– Pablo Picasso –</p>
+</blockquote>
+
+<p>The objective for the second week about the application was mainly to connect to a twitter live stream
+so I gooled and found this <a href="http://technikology.blogspot.de/2014/07/simple-code-to-connect-to-twitter.html">example</a>.</p>
+
+<p>I had first to read about <a href="http://tools.ietf.org/html/rfc5849">OAuth v1</a> to understand a bit what those tokens and things were but still
+it took some time to finally understand what was going on in the example and had to check some twitter help pages:</p>
+
+<ul>
+  <li><a href="http://hueniverse.com/oauth/">Beginners Guide to OAuth</a></li>
+  <li><a href="https://dev.twitter.com/streaming/overview">Twitter Stream APIs</a></li>
+  <li><a href="https://dev.twitter.com/streaming/public">Public streams</a></li>
+  <li><a href="https://dev.twitter.com/streaming/overview/connecting">Connecting to a stream endpoint</a></li>
+  <li><a href="https://dev.twitter.com/oauth/overview/authorizing-requests">Authorizing Requests</a></li>
+  <li><a href="https://dev.twitter.com/web/sign-in/implementing">sign-in guide</a></li>
+</ul>
+
+<p>But I was even more lost with all this information until I realized the example I was following was using 
+<a href="https://dev.twitter.com/oauth/pin-based"><strong>PIN-Based OAuth</strong></a>. Then I could adapt the example
+understanding what it was doing.</p>
+
+<p>I cannot use an <a href="https://dev.twitter.com/oauth/application-only">application-only authentication</a> because it does not
+allow to connect to Streaming endpoints.</p>
+
+<p>I used the library <a href="https://github.com/scalaj/scalaj-http">scalaj-http</a> as http client library and 
+reading the <a href="http://scalaj.github.io/scalaj-http/1.1.0/#scalaj.http.HttpRequest">HttpRequest</a>
+and <a href="http://scalaj.github.io/scalaj-http/1.1.0/#scalaj.http.HttpResponse">HttpResponse</a> scala doc.</p>
+
+<p>The code in git hub is tagged as <a href="https://github.com/jperezsorrosal/houstairs/tree/pin-auth">pint-auth</a>.</p>
+
+<p>The Twitter is a small scala object in the file
+<a href="https://github.com/jperezsorrosal/houstairs/blob/pin-auth/src/main/scala/twitty/twitterStreamExample.scala">twitterStreamExample.scala</a>
+which I explain now.</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">twitty</span>
+
+<span class="k">import</span> <span class="nn">com.typesafe.config.ConfigFactory</span>
+
+<span class="k">import</span> <span class="nn">scala.util.parsing.json.JSON</span>
+<span class="k">import</span> <span class="nn">scalaj.http._</span>
+
+<span class="k">object</span> <span class="nc">twitterStreamExample</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="o">{</span>
+
+    <span class="k">val</span> <span class="n">conf</span> <span class="k">=</span> <span class="nc">ConfigFactory</span><span class="o">.</span><span class="n">load</span><span class="o">()</span>
+
+    <span class="k">val</span> <span class="n">consumerToken</span> <span class="k">=</span> <span class="nc">Token</span><span class="o">(</span><span class="n">conf</span><span class="o">.</span><span class="n">getString</span><span class="o">(</span><span class="s">&quot;houstairs.twitterConsumerKey&quot;</span><span class="o">),</span>
+      <span class="n">conf</span><span class="o">.</span><span class="n">getString</span><span class="o">(</span><span class="s">&quot;houstairs.twitterConsumerSecret&quot;</span><span class="o">))</span>
+
+    <span class="k">val</span> <span class="n">response</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://api.twitter.com/oauth/request_token&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">postForm</span><span class="o">(</span><span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;oauth_callback&quot;</span> <span class="o">-&gt;</span> <span class="s">&quot;oob&quot;</span><span class="o">))</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">).</span><span class="n">asToken</span>
+
+    <span class="n">println</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="o">)</span>
+
+    <span class="n">println</span><span class="o">(</span><span class="s">&quot;To authorize this client app, go to https://api.twitter.com/oauth/authorize?oauth_token=&quot;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">key</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">verifier</span> <span class="k">=</span> <span class="nc">Console</span><span class="o">.</span><span class="n">readLine</span><span class="o">(</span><span class="s">&quot;Enter verifier: &quot;</span><span class="o">).</span><span class="n">trim</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">verifier</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">accessToken</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://api.twitter.com/oauth/access_token&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">postForm</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">,</span> <span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="o">,</span> <span class="n">verifier</span><span class="o">).</span><span class="n">asToken</span>
+
+    <span class="n">println</span><span class="o">(</span><span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://api.twitter.com/1.1/account/settings.json&quot;</span><span class="o">).</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">,</span> <span class="n">accessToken</span><span class="o">.</span><span class="n">body</span><span class="o">).</span><span class="n">asString</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">request</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://stream.twitter.com/1.1/statuses/filter.json&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">param</span><span class="o">(</span><span class="s">&quot;track&quot;</span><span class="o">,</span> <span class="s">&quot;PlutoFlyby, scala, Grecia, Greece&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">,</span> <span class="n">accessToken</span><span class="o">.</span><span class="n">body</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">options</span><span class="o">(</span><span class="nc">HttpOptions</span><span class="o">.</span><span class="n">connTimeout</span><span class="o">(</span><span class="mi">500000</span><span class="o">),</span> <span class="nc">HttpOptions</span><span class="o">.</span><span class="n">readTimeout</span><span class="o">(</span><span class="mi">500000</span><span class="o">))</span>
+
+    <span class="c1">//streaming api read it continuously and do whatever with it</span>
+    <span class="c1">//i am just printing it</span>
+
+    <span class="n">request</span><span class="o">.</span><span class="n">execute</span><span class="o">(</span><span class="n">parser</span> <span class="k">=</span> <span class="o">{</span> <span class="n">inputStream</span> <span class="k">=&gt;</span>
+      <span class="o">(</span><span class="nc">Stream</span><span class="o">.</span><span class="n">continually</span><span class="o">(</span><span class="n">inputStream</span><span class="o">.</span><span class="n">read</span><span class="o">()).</span><span class="n">takeWhile</span><span class="o">(</span><span class="k">_</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span>
+        <span class="o">.</span><span class="n">foreach</span><span class="o">(</span> <span class="n">i</span> <span class="k">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="n">i</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">Char</span><span class="o">])))</span>
+    <span class="o">})</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+<p>I construct a token using the <em>consumerKey</em> and <em>consumerKeySecret</em> I obtain after creating a twitter application in
+twitter’s <a href="https://apps.twitter.com/">application management</a>. These <em>tokens</em> are used to identify the <em>application client</em>
+on the twitter server.</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">consumerToken</span> <span class="k">=</span> <span class="nc">Token</span><span class="o">(</span><span class="n">conf</span><span class="o">.</span><span class="n">getString</span><span class="o">(</span><span class="s">&quot;houstairs.twitterConsumerKey&quot;</span><span class="o">),</span>
+      <span class="n">conf</span><span class="o">.</span><span class="n">getString</span><span class="o">(</span><span class="s">&quot;houstairs.twitterConsumerSecret&quot;</span><span class="o">))</span></code></pre></div>
+
+<figure class="half">
+	<a href="/images/posts/pin-auth/twitter-application-manager.png">
+		<img src="/images/posts/pin-auth/twitter-application-manager.png" />
+	</a>
+    <a href="/images/posts/pin-auth/twitter-manager-access-keys.png">
+            <img src="/images/posts/pin-auth/twitter-manager-access-keys.png" />
+    </a>
+    <figcaption>
+            <a href="https://apps.twitter.com/" title="Twitter's Application management, access keys">Twitter's Application management, access, keys</a>.
+    </figcaption>
+</figure>
+
+<p>Then I ask twitter server for a token in order to authenticate the calls coming from the application, but I set the
+value for the <code>oauth_callback</code> to <code>oob</code> (meaning <em>out-of-band</em> pin mode) during the
+<a href="https://dev.twitter.com/oauth/reference/post/oauth/request_token">POST oauth / request_token</a> call.
+This parameter is usually used to specify the URL a user is redirected to should they approve the application’s access
+to the account.</p>
+
+<p>With this call we receive a token to later ask for an authorization to twitter to access the resources (my account and the stream).</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">response</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://api.twitter.com/oauth/request_token&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">postForm</span><span class="o">(</span><span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;oauth_callback&quot;</span> <span class="o">-&gt;</span> <span class="s">&quot;oob&quot;</span><span class="o">))</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">).</span><span class="n">asToken</span></code></pre></div>
+
+<p>Then I ask to go with a web browser to request a verifier using the token we received.</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="n">println</span><span class="o">(</span><span class="s">&quot;To authorize this client app, go to https://api.twitter.com/oauth/authorize?oauth_token=&quot;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">key</span><span class="o">)</span></code></pre></div>
+
+<p>We click on the button to authorize the app and a verifier code is displayed. We should paste that code in the console.</p>
+
+<figure class="third">
+        <a href="/images/posts/pin-auth/twitter-pin-authorize.png">
+                <img src="/images/posts/pin-auth/twitter-pin-authorize.png" />
+        </a>
+        <a href="/images/posts/pin-auth/twitter-pin-verifier-code.png">
+                                <img src="/images/posts/pin-auth/twitter-pin-verifier-code.png" />
+        </a>
+        <a href="/images/posts/pin-auth/twitter-console-pin-verifier.png">
+                                        <img src="/images/posts/pin-auth/twitter-console-pin-verifier.png" />
+        </a>
+</figure>
+
+<p>After I request an <strong>access token</strong> using the <strong>consumer token</strong>, the <strong>authentication_token</strong> and the <strong>validation code</strong></p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">accessToken</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://api.twitter.com/oauth/access_token&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">postForm</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">,</span> <span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="o">,</span> <span class="n">verifier</span><span class="o">).</span><span class="n">asToken</span></code></pre></div>
+
+<p>Finally I perform another request to the stream using the <strong>consumer token</strong> and the <strong>access token</strong> I received.
+I pass some parameters to set the filters, selecting the topics I want to filter for example.
+And then I print then out to the console.</p>
+
+<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">val</span> <span class="n">request</span> <span class="k">=</span> <span class="nc">Http</span><span class="o">(</span><span class="s">&quot;https://stream.twitter.com/1.1/statuses/filter.json&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">param</span><span class="o">(</span><span class="s">&quot;track&quot;</span><span class="o">,</span> <span class="s">&quot;PlutoFlyby, scala, Grecia, Greece&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">oauth</span><span class="o">(</span><span class="n">consumerToken</span><span class="o">,</span> <span class="n">accessToken</span><span class="o">.</span><span class="n">body</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">options</span><span class="o">(</span><span class="nc">HttpOptions</span><span class="o">.</span><span class="n">connTimeout</span><span class="o">(</span><span class="mi">500000</span><span class="o">),</span> <span class="nc">HttpOptions</span><span class="o">.</span><span class="n">readTimeout</span><span class="o">(</span><span class="mi">500000</span><span class="o">))</span></code></pre></div>
+
+<figure class="half">
+	<a href="/images/posts/pin-auth/twitter-console-pin-tweets.png">
+		<img src="/images/posts/pin-auth/twitter-console-pin-tweets.png" />
+	</a>
+</figure>
+
+<p>Next step will be to refactor this so I do not use this <strong>PIN authentication</strong>, parse the tweets with Json and
+asynchronously process the tweets.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/twitter-pin-authentication/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/twitter-pin-authentication/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/twitter-pin-authentication/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->
+        <p class="byline"><strong>Twitter PIN Authentication</strong> was published on <time datetime="2015-07-14T19:16:47+02:00">July 14, 2015</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="/dr-jekyll-and-mr-juan/" title="Dr.Jekyll and Mr.Juan">Dr.Jekyll and Mr.Juan</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2015 J.Pérez-Sorrosal. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-50762298-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>
