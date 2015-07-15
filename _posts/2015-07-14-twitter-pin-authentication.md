@@ -102,11 +102,11 @@ on the twitter server.
 {% endhighlight %}
 
 <figure class="half">
-	<a href="/images/posts/pin-auth/twitter-application-manager.png">
-		<img src="/images/posts/pin-auth/twitter-application-manager.png">
+	<a href="{{site_url}}/images/posts/pin-auth/twitter-application-manager.png">
+		<img src="{{site_url}}/images/posts/pin-auth/twitter-application-manager.png">
 	</a>
-    <a href="/images/posts/pin-auth/twitter-manager-access-keys.png">
-            <img src="/images/posts/pin-auth/twitter-manager-access-keys.png">
+    <a href="{{site_url}}/images/posts/pin-auth/twitter-manager-access-keys.png">
+            <img src="{{site_url}}/images/posts/pin-auth/twitter-manager-access-keys.png">
     </a>
     <figcaption>
             <a href="https://apps.twitter.com/"
@@ -138,14 +138,14 @@ println("To authorize this client app, go to https://api.twitter.com/oauth/autho
 We click on the button to authorize the app and a verifier code is displayed. We should paste that code in the console.
 
 <figure class="third">
-        <a href="/images/posts/pin-auth/twitter-pin-authorize.png">
-            <img src="/images/posts/pin-auth/twitter-pin-authorize.png">
+        <a href="{{site_url}}/images/posts/pin-auth/twitter-pin-authorize.png">
+            <img src="{{site_url}}/images/posts/pin-auth/twitter-pin-authorize.png">
         </a>
-        <a href="/images/posts/pin-auth/twitter-pin-verifier-code.png">
-            <img src="/images/posts/pin-auth/twitter-pin-verifier-code.png">
+        <a href="{{site_url}}/images/posts/pin-auth/twitter-pin-verifier-code.png">
+            <img src="{{site_url}}/images/posts/pin-auth/twitter-pin-verifier-code.png">
         </a>
-        <a href="/images/posts/pin-auth/twitter-console-pin-verifier.png">
-            <img src="/images/posts/pin-auth/twitter-console-pin-verifier.png">
+        <a href="{{site_url}}/images/posts/pin-auth/twitter-console-pin-verifier.png">
+            <img src="{{site_url}}/images/posts/pin-auth/twitter-console-pin-verifier.png">
         </a>
 </figure>
 
@@ -170,8 +170,8 @@ And then I print then out to the console.
 
 
 <figure class="half">
-	<a href="/images/posts/pin-auth/twitter-console-pin-tweets.png">
-		<img src="/images/posts/pin-auth/twitter-console-pin-tweets.png">
+	<a href="{{site_url}}/images/posts/pin-auth/twitter-console-pin-tweets.png">
+		<img src="{{site_url}}/images/posts/pin-auth/twitter-console-pin-tweets.png">
 	</a>
 </figure>
 
