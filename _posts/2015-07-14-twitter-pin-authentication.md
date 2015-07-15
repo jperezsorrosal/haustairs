@@ -139,13 +139,13 @@ We click on the button to authorize the app and a verifier code is displayed. We
 
 <figure class="third">
         <a href="/images/posts/pin-auth/twitter-pin-authorize.png">
-                <img src="/images/posts/pin-auth/twitter-pin-authorize.png">
+            <img src="/images/posts/pin-auth/twitter-pin-authorize.png">
         </a>
         <a href="/images/posts/pin-auth/twitter-pin-verifier-code.png">
-                                <img src="/images/posts/pin-auth/twitter-pin-verifier-code.png">
+            <img src="/images/posts/pin-auth/twitter-pin-verifier-code.png">
         </a>
         <a href="/images/posts/pin-auth/twitter-console-pin-verifier.png">
-                                        <img src="/images/posts/pin-auth/twitter-console-pin-verifier.png">
+            <img src="/images/posts/pin-auth/twitter-console-pin-verifier.png">
         </a>
 </figure>
 
