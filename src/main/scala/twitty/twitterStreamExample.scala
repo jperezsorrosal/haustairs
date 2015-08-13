@@ -2,13 +2,8 @@ package twitty
 
 import com.typesafe.config.ConfigFactory
 
-import scala.util.parsing.json.JSON
 import scalaj.http._
 
-
-/**
- * Created by jperez on 10/07/15.
- */
 object twitterStreamExample {
   def main(args: Array[String]) {
 
@@ -20,12 +15,12 @@ object twitterStreamExample {
     val accessToken = Token(conf.getString("houstairs.twitterAccessToken"),
       conf.getString("houstairs.twitterAccessTokenSecret"))
 
-    println(Http("https://api.twitter.com/1.1/account/settings.json").oauth(consumerToken, accessToken).asString)
-
     val request = Http("https://stream.twitter.com/1.1/statuses/filter.json")
-      .param("track", "PlutoFlyby, scala, Grecia, Greece")
+      .param("track", "GreeceCrisis, syriza, tsipras, Grexit,")
       .oauth(consumerToken, accessToken)
-      .options(HttpOptions.connTimeout(5000000), HttpOptions.readTimeout(5000000))
+      .options(HttpOptions.connTimeout(500000), HttpOptions.readTimeout(500000))
+
+    println("*** URL: " + request.asString)
 
     request.execute(parser = { inputStream =>
       (Stream.continually(inputStream.read()).takeWhile(_ != -1)
