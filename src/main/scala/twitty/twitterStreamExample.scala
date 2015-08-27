@@ -25,6 +25,7 @@ object twitterStreamExample {
     request.execute(parser = { inputStream =>
       (Stream.continually(inputStream.read()).takeWhile(_ != -1)
         .foreach( i => print(i.asInstanceOf[Char])))
+
     })
   }
 }

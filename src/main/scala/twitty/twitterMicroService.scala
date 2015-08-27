@@ -66,7 +66,7 @@ object TwitterMicroService extends App with twtService with OAuthTwitterAuthoriz
 
   val entity = HttpEntity.Strict(MediaTypes.`application/x-www-form-urlencoded`, ByteString("track=tsipras"))
   val par = List("track=tsipras")
-  val request = authorize(HttpRequest(GET, uri=twitterUri))
+  val request = authorize(HttpRequest(POST, uri=twitterUri))
 
 
   println(request.getHeaders().toString )
